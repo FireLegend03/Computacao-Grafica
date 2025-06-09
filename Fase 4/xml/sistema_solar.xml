@@ -1,0 +1,344 @@
+<world> <!-- a world can have a camera, a window definition, and a single group -->
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="100" y="20" z="0" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="60" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+
+    <lights>
+        <light type="point" posx="0" posy="0" posz="0" />        
+    </lights>
+
+    <group>
+        <group>
+            <models>
+                <model file="sun.3d" > <!-- desenhar esfera do sol -->
+                <texture file="sun.jpg" />
+                <color>
+                    <emissive R="255" G="255" B="255"/>
+                </color>
+                </model>    
+            </models>
+        </group>    
+        <group>
+            <transform>
+                <translate time = "20" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "76.9133" y = "0" z = "0" />
+                    <point x = "54.38592" y = "0" z = "-54.38592" />
+                    <point x = "0" y = "0" z = "-76.9133" />
+                    <point x = "-54.38592" y = "0" z = "-54.38592" />
+                    <point x = "-76.9133" y = "0" z = "0" />
+                    <point x = "-54.38592" y = "0" z = "54.38592" />
+                    <point x = "0" y = "0" z = "76.9133" />
+                    <point x = "54.38592" y = "0" z = "54.38592" />
+                </translate>                        
+                <rotate time="2112" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="mercury.3d" > <!-- desenhar esfera de mercurio -->
+                <texture file="mercury.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>             
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "40" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "80.9352" y = "0" z = "0" />
+                    <point x = "57.22983" y = "0" z = "-57.22983" />
+                    <point x = "0" y = "0" z = "-80.9352" />
+                    <point x = "-57.22983" y = "0" z = "-57.22983" />
+                    <point x = "-80.9352" y = "0" z = "0" />
+                    <point x = "-57.22983" y = "0" z = "57.22983" />
+                    <point x = "0" y = "0" z = "80.9352" />
+                    <point x = "57.22983" y = "0" z = "57.22983" />
+                </translate>
+                <rotate time="2916" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="venus.3d" > <!-- desenhar esfera de venus -->
+                <texture file="venus.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model> 
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "60" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "85.0748" y = "0" z = "0" />
+                    <point x = "60.15697" y = "0" z = "-60.15697" />
+                    <point x = "0" y = "0" z = "-85.0748" />     
+                    <point x = "-60.15697" y = "0" z = "-60.15697" />
+                    <point x = "-85.0748" y = "0" z = "0" />  
+                    <point x = "-60.15697" y = "0" z = "60.15697" />
+                    <point x = "0" y = "0" z = "85.0748" />
+                    <point x = "60.15697" y = "0" z = "60.15697" />             
+                </translate>
+                <rotate time="12" x="0" y="1" z="0" />
+            </transform>
+            <group>
+                <models>
+                    <model file="earth.3d" > <!-- desenhar esfera da terra -->
+                    <texture file="earth.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>              
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <rotate angle="-5.0" x="1" y="0" z="0" />
+                    <translate time = "5" align="true"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                        <point x = "1" y = "0" z = "0" />
+                        <point x = "0.70711" y = "0" z = "-0.70711" />
+                        <point x = "0" y = "0" z = "-1" />     
+                        <point x = "-0.70711" y = "0" z = "-0.70711" />
+                        <point x = "-1" y = "0" z = "0" />
+                        <point x = "-0.70711" y = "0" z = "0.70711" />
+                        <point x = "0" y = "0" z = "1" />      
+                        <point x = "0.70711" y = "0" z = "0.70711" />     
+                    </translate>
+                </transform>
+                <models>
+                    <model file="moon.3d" > <!-- desenhar esfera da lua -->
+                    <texture file="moon.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>                    
+                    </model>                                           
+                </models>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <translate time = "120" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "97.9385" y = "0" z = "0" />
+                    <point x = "69.25298" y = "0" z = "-69.25298" />
+                    <point x = "0" y = "0" z = "-97.9385" />
+                    <point x = "-69.25298" y = "0" z = "-69.25298" />
+                    <point x = "-97.9385" y = "0" z = "0" />
+                    <point x = "-69.25298" y = "0" z = "69.25298" />
+                    <point x = "0" y = "0" z = "97.9385" />
+                    <point x = "69.25298" y = "0" z = "69.25298" />                        
+                </translate>
+                <rotate time="12" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="mars.3d" > <!-- desenhar esfera de marte -->
+                <texture file="mars.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>        
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "600" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "217.41" y = "0" z = "0" />
+                    <point x = "153.73209" y = "0" z = "-153.73209" />
+                    <point x = "0" y = "0" z = "-217.41" />     
+                    <point x = "-153.73209" y = "0" z = "-153.73209" />
+                    <point x = "-217.41" y = "0" z = "0" />
+                    <point x = "-153.73209" y = "0" z = "153.73209" />
+                    <point x = "0" y = "0" z = "217.41" />
+                    <point x = "153.73209" y = "0" z = "153.73209" />                                 
+                </translate>
+                <rotate time="5" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="jupiter.3d" > <!-- desenhar esfera de jupiter -->
+                <texture file="jupiter.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "1200" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "273.24" y = "0" z = "0" />
+                    <point x = "193.20986" y = "0" z = "-193.20986" />
+                    <point x = "0" y = "0" z = "-273.24" />  
+                    <point x = "-193.20986" y = "0" z = "-193.20986" />
+                    <point x = "-273.24" y = "0" z = "0" />
+                    <point x = "-193.20986" y = "0" z = "193.20986" />
+                    <point x = "0" y = "0" z = "273.24" />
+                    <point x = "193.20986" y = "0" z = "193.20986" />   
+                </translate>
+                <rotate time="5.2" x="0" y="1" z="0" />
+            </transform>
+            <group>
+                <models>
+                    <model file="saturn.3d" > <!-- desenhar esfera de saturno -->
+                    <texture file="saturn.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>   
+                </models>
+            </group>
+            <group>
+                <models>
+                    <model file="saturn_ring_C.3d" > <!-- desenhar anel C de saturno -->
+                    <texture file="saturn_ring.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+            <group>
+                <models>
+                    <model file="saturn_ring_B.3d" > <!-- desenhar anel B de saturno -->
+                    <texture file="saturn_ring.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+            <group>
+                <models>
+                    <model file="saturn_ring_A.3d" > <!-- desenhar anel A de saturno -->
+                    <texture file="saturn_ring.jpg" />
+                    <color>
+                        <specular R="50" G="50" B="50"/>
+                        <ambient R="100" G="100" B="100"/>
+                        <shininess value="128"/>
+                    </color>
+                    </model>
+                </models>
+            </group>
+        </group>
+        <group>
+            <transform>
+                <translate time = "3600" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "387.152" y = "0" z = "0" />
+                    <point x = "273.7578" y = "0" z = "-273.7578" />
+                    <point x = "0" y = "0" z = "-387.152" />
+                    <point x = "-273.7578" y = "0" z = "-273.7578" />
+                    <point x = "-387.152" y = "0" z = "0" />
+                    <point x = "-273.7578" y = "0" z = "273.7578" />
+                    <point x = "0" y = "0" z = "387.152" />
+                    <point x = "273.7578" y = "0" z = "273.7578" />
+                </translate>
+                <rotate time="9" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="uranus.3d" > <!-- desenhar esfera de urano -->
+                <texture file="uranus.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "7200" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "541.454" y = "0" z = "0" />
+                    <point x = "382.8658" y = "0" z = "-382.8658" />
+                    <point x = "0" y = "0" z = "-541.454" /> 
+                    <point x = "-382.8658" y = "0" z = "-382.8658" />
+                    <point x = "-541.454" y = "0" z = "0" />
+                    <point x = "-382.8658" y = "0" z = "382.8658" />
+                    <point x = "0" y = "0" z = "541.454" />
+                    <point x = "382.8658" y = "0" z = "382.8658" />
+                </translate>
+                <rotate time="8" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="neptune.3d" > <!-- desenhar esfera de netuno -->
+                <texture file="neptune.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate time = "10000" align="false"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "661.3963" y = "0" z = "0" />
+                    <point x = "467.67781" y = "0" z = "-467.67781" />
+                    <point x = "0" y = "0" z = "-661.3963" />
+                    <point x = "-467.67781" y = "0" z = "-467.67781" />
+                    <point x = "-661.3963" y = "0" z = "0" />
+                    <point x = "-467.67781" y = "0" z = "467.67781" />
+                    <point x = "0" y = "0" z = "661.3963" />
+                    <point x = "467.67781" y = "0" z = "467.67781" />
+                </translate>
+                <rotate time="72" x="0" y="1" z="0" />
+            </transform>
+            <models>
+                <model file="pluto.3d" > <!-- desenhar esfera de plutao -->
+                <texture file="pluto.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+        <group>
+            <transform>
+                <rotate angle="20" x="0" y="0" z="1" />
+                <translate time = "30" align="true"> <!-- O campo align diz se o objecto deve ser orientado na curva -->
+                    <point x = "358" y = "0" z = "0" />
+                    <point x = "300" y = "0" z = "-74.31907" />
+                    <point x = "200" y = "0" z = "-105.59024" />
+                    <point x = "100" y = "0" z = "-108.81272" />
+                    <point x = "0" y = "0" z = "-87.15533" />
+                    <point x = "-85.99099" y = "0" z = "0" />
+                    <point x = "0" y = "0" z = "87.15533" />
+                    <point x = "100" y = "0" z = "108.81272" />
+                    <point x = "200" y = "0" z = "105.59024" />
+                    <point x = "300" y = "0" z = "74.31907" />
+                </translate>
+                <scale x="0.5" y="0.5" z="0.5" />
+            </transform>
+            <models>
+                <model file="bezier_10.3d" > <!-- desenhar anel de plutao -->
+                <texture file="teapot.jpg" />
+                <color>
+                    <specular R="50" G="50" B="50"/>
+                    <ambient R="100" G="100" B="100"/>
+                    <shininess value="128"/>
+                </color>
+                </model>
+            </models>
+        </group>
+    </group>
+</world>
