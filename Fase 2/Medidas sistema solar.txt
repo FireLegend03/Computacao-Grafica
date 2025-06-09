@@ -1,0 +1,33 @@
+Escala utilizada para converter o raio dos planetas e do sol - 10,000km -> 1 unidade
+Escala utilizada para converter a distância dos planetas ao sol - 10,000,000km -> 1 unidade
+
+
+RAIOS			
+Sol - 695,700 km -> 69.57 unidades 
+Mercúrio - 2,439.7 km	-> 0.24397 unidades	
+Vênus - 6,052 km	-> 0.6052 unidades
+Terra - 6378 km		-> 0.6378 unidades
+Lua - 1737,4 km   -> 0.17374 unidades	
+Marte - 3,389.5 km	-> 0.33895 unidades	
+Júpiter - 71,492 km	-> 7.1492 unidades
+Saturno - 60,000 km	-> 6.0 unidades
+Urano - 25,362 km	-> 2.5362 unidades
+Neptuno - 24,764 km -> 2.4764 unidades	
+Pluto(goat) - 1,188 km -> 0.1188 unidades
+Aneis de Saturno:
+Saturno anel C: outer radious - 166,500 -> 16.65 inner radious - 17,500 -> 1.75 
+Saturno anel B: outer radious - 209,500 -> 20.95 inner radious - 25,500 -> 2.55
+Saturno anel A: outer radious - 259,900 -> 25.9 inner radious - 15,000 -> 1.5
+
+
+Distância ao sol
+Mercúrio - 49,036,000 km -> 4.9036 
+Vênus - 107,600,000 km -> 10.76 
+Terra - 148,670,000 km -> 14.867
+Lua - 384,400 km (Distância da Terra)! ->	0.03844 (Distância da Terra)!
+Marte - 249,790,000 km -> 24.9790000 
+Júpiter - 763,480,000 km -> 76.348 
+Saturno - 1,436,700,000 km -> 143.67
+Urano - 2,922,200,000 km -> 292.22
+Neptuno - 4,471,200,000 km -> 447.12
+Pluto(goat) - 5,906,380,000 km -> 590.638

@@ -1,0 +1,147 @@
+<world> <!-- a world can have a camera, a window definition, and a single group -->
+    <window width="512" height="512" />
+    <camera> 
+	    <position x="90" y="3" z="0" />
+	    <lookAt x="0" y="0" z="0" />
+	    <up x="0" y="1" z="0" /> <!-- optional, use these values as default-->
+        <projection fov="60" near="1" far="1000" /> <!-- optional, use these values as default-->
+    </camera>
+
+    <group>
+        <group>
+            <transform>
+                <color x="0.93" y="0.4255" z="0.0651" />
+            </transform>
+            <models>
+                <model file="sun.3d" /> <!-- desenhar esfera do sol -->
+            </models>
+        </group>
+        <group>
+            <transform>
+                <translate x="69.57" y="0" z="0" /> <!--translate raio do sol -->
+            </transform>
+            <group>
+                <transform>
+                    <translate x="7.3433" y="0" z="0" /> <!--translate dist de mercurio ao sol-->
+                    <color x="0.7" y="0.6956" z="0.74" />
+                </transform>
+                <models>
+                    <model file="mercury.3d" /> <!-- desenhar esfera de mercurio -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="11.3652" y="0" z="0" /> <!--translate dist de venus ao sol-->
+                    <color x="0.65" y="0.3735" z="0.078" />
+                </transform>
+                <models>
+                    <model file="venus.3d" /> <!-- desenhar esfera de venus -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="15.5048" y="0" z="0" /> <!--translate dist da terra ao sol-->
+                    <color x="0.0528" y="0.2872" z="0.88" />
+                </transform>
+                <models>
+                    <model file="earth.3d" /> <!-- desenhar esfera da terra -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="15.5048" y="0" z="0" /> <!--translate dist da terra ao sol-->
+                    <rotate angle="-10.0" x="1" y="0" z="0" />
+                </transform>
+                <group>
+                    <transform>
+                        <translate x="0" y="0" z="1" /> <!--translate dist da lua ao centro terra-->
+                        <color x="0.59" y="0.5672" z="0.5428" />
+                    </transform>
+                    <models>
+                        <model file="moon.3d" /> <!-- desenhar esfera da lua -->
+                    </models>
+                </group>
+            </group>
+            <group>
+                <transform>
+                    <translate x="28.3685" y="0" z="0" /> <!--translate dist de marte ao sol-->
+                    <color x="0.78" y="0.2769" z="0.078" />
+                </transform>
+                <models>
+                    <model file="mars.3d" /> <!-- desenhar esfera de marte -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="147.84" y="0" z="0" /> <!--translate dist de jupiter ao sol-->
+                    <color x="0.83" y="0.655" z="0.3735" />
+                </transform>
+                <models>
+                    <model file="jupiter.3d" /> <!-- desenhar esfera de jupiter -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="203.67" y="0" z="0" /> <!--translate dist de saturno ao sol-->
+                    <color x="0.88" y="0.7586" z="0.5632" />
+                </transform>
+                <group>
+                    <models>
+                        <model file="saturn.3d" /> <!-- desenhar esfera de saturno -->
+                    </models>
+                </group>
+                <group>
+                    <transform>
+                        <color x="0.49" y="0.4165" z="0.3136" />
+                    </transform>
+                    <models>
+                        <model file="saturn_ring_C.3d" /> <!-- desenhar anel C de saturno -->
+                    </models>
+                </group>
+                <group>
+                    <transform>
+                        <color x="0.24" y="0.215" z="0.18" />
+                    </transform>
+                    <models>
+                        <model file="saturn_ring_B.3d" /> <!-- desenhar anel B de saturno -->
+                    </models>
+                </group>
+                <group>
+                    <transform>
+                        <color x="0.67" y="0.5081" z="0.2814" />
+                    </transform>
+                    <models>
+                        <model file="saturn_ring_A.3d" /> <!-- desenhar anel A de saturno -->
+                    </models>
+                </group>
+            </group>
+            <group>
+                <transform>
+                    <translate x="317.582" y="0" z="0" /> <!--translate dist de urano ao sol-->
+                    <color x="0.7802" y="0.94" z="0.8814" />
+                </transform>
+                <models>
+                    <model file="uranus.3d" /> <!-- desenhar esfera de urano -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="471.884" y="0" z="0" /> <!--translate dist de netuno ao sol-->
+                    <color x="0.1056" y="0.2089" z="0.88" />
+                </transform>
+                <models>
+                    <model file="neptune.3d" /> <!-- desenhar esfera de netuno -->
+                </models>
+            </group>
+            <group>
+                <transform>
+                    <translate x="591.8263" y="0" z="0" /> <!--translate dist de plutao ao sol-->
+                    <color x="0.97" y="0.684" z="0.3783" />
+                </transform>
+                <models>
+                    <model file="pluto.3d" /> <!-- desenhar esfera de plutao -->
+                </models>
+            </group>
+        </group>
+    </group>
+</world>
